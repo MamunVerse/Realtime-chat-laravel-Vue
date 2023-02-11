@@ -1,14 +1,26 @@
+import Axios from "axios"
+
 export default {
     state: {
-
+        userList : []
     },
-    mutations: {
 
+    getters: {
+        userList(state){
+             return state.userList;
+        }
     },
     actions: {
-
+        userList(contex){
+            Axios.get('/userlist')
+            .then(res => {
+                contex.commit("userList", res.data);
+            })
+        }
     },
-    getters: {
-        
+    mutations: {
+        userList(state, payload){
+            state.userList = payload;
+        }
     },
 }

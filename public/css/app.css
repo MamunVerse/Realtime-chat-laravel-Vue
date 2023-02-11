@@ -10673,11 +10673,17 @@ a.text-dark:focus {
   box-sizing: border-box;
 }
 
+.main {
+  padding: 70px 0px 100px;
+}
+
 .container-chat {
   margin: 0 auto;
   width: 750px;
-  background: #0aaf57;
+  background: #130630;
   border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
 }
 
 .name {
@@ -10698,9 +10704,37 @@ a.text-dark:focus {
   border: none;
   padding: 14px;
   color: white;
-  background: #6A6C75;
+  background: #343744;
   width: 90%;
   font-size: 14px;
+}
+
+.people-list input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.people-list input::-moz-placeholder {
+  color: #fff !important;
+}
+
+.people-list input:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+.people-list input::-ms-input-placeholder {
+  color: #fff !important;
+}
+
+.people-list input::placeholder {
+  color: #fff !important;
+}
+
+.people-list input::-webkit-placeholder {
+  color: #fff !important;
+}
+
+.people-list input::-moz-placeholder {
+  color: #fff !important;
 }
 
 .people-list .fa-search {
@@ -10739,8 +10773,6 @@ a.text-dark:focus {
   width: 490px;
   float: left;
   background: #F2F5F8;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   color: #434651;
 }
 

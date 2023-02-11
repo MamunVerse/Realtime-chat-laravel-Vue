@@ -24,12 +24,17 @@ $gray: #92959E;
   box-sizing: border-box;
 }
 
+.main{
+  padding: 70px 0px 100px;
+}
 
 .container-chat {
   margin: 0 auto;
   width: 750px;
-  background: #0aaf57;
+  background: #130630;
   border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 4px 4px 50px 0px rgb(0 0 0 / 25%);
 }
 .name{color:#fff}
 .people-list {
@@ -45,9 +50,18 @@ $gray: #92959E;
     border: none;
     padding: 14px;
     color: white;
-    background: #6A6C75;
+    background: #343744;
     width: 90%;
     font-size: 14px;
+    &::placeholder{
+      color: #fff!important;
+    }
+    &::-webkit-placeholder{
+      color: #fff!important;
+    }
+    &::-moz-placeholder{
+      color: #fff!important;
+    }
   }
   
   .fa-search {
@@ -91,8 +105,6 @@ $gray: #92959E;
   width: 490px;
   float:left;
   background: #F2F5F8;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   
   color: #434651;
   
