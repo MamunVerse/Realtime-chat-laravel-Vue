@@ -11,6 +11,10 @@ import storeVuex from './store/index';
 
 const store = new Vuex.Store(storeVuex);
 
+import filter from './filter';
+
+import VueChatScroll from 'vue-chat-scroll'
+Vue.use(VueChatScroll)
 
 
 Vue.component('main-app', require('./components/MainApp.vue').default);
